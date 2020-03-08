@@ -32,7 +32,7 @@ before_build:
 build_script:
   - build\auto\build_openmpt_args.cmd vs2019 default Win32 Release 7z default
   - build\auto\build_openmpt_args.cmd vs2019 default x64   Release 7z default
-  - build\auto\build_openmpt_args.com vs2019 default ARM   Release 7z default
+  - build\auto\build_openmpt_args.cmd vs2019 default ARM   Release 7z default
 
 after_build:
   - build\auto\package_openmpt_args.cmd vs2019 default Win32 Release 7z default
